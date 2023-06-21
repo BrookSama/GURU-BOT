@@ -3,26 +3,23 @@ let handler = async m => m.reply(`
 ≡  *GURU  ┃ ᴮᴼᵀ*   GROUPS
 
 ─────────────
-▢ Join public bot group and support
-https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp
+▢ Group 1
+https://chat.whatsapp.com/IuDAdDRu9GtEStnEwsnmph
 
 ▢ Group 2
-https://chat.whatsapp.com/LwLQab5mZVW6WWRbBPnDGC
+https://chat.whatsapp.com/DV9ME7ocNPJA03qXmezoeI
 
 ▢ Group 3
-https://chat.whatsapp.com/Jn9qVerYN6Q1L0vlVFe2XL
+https://chat.whatsapp.com/GW1od1q3l8i4KLmpsZMHD6
 
+▢ Group 4 
+ https://chat.whatsapp.com/LMiZh36TqPTDAEbDweXoYL
 ─────────────
-≡ Disabled links? enter here! 
+▢ *Owner*
+wa.me/970567751182
 
-▢ Group WhatsApp 
- https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp
-─────────────
-▢ *Owner Telegram*
- https://t.me/i_want_to_be_isekaied
-
-▢ *YouTube*
-• https://www.youtube.com/@Asliguru
+▢ *kingdom*
+• https://instabio.cc/4072613SI2Tgx
 
 
 `.trim())
