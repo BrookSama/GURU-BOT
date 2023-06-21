@@ -11,12 +11,12 @@ if (!effects.includes(effect)) throw `
 ${effects.map(effect => `▢ ${effect}`).join('\n')}
 └───────────
 
-📌 *Example:* 
+📌 *مثال:* 
 ${usedPrefix + command} wasted 
 `.trim()
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw '✳️ Respond to an image'
+if (!mime) throw '✳️ الرد على صورة'
 if (!/image\/(jpe?g|png)/.test(mime)) throw `✳️ Format not supported`
 let img = await q.download()
 let url = await uploadImage(img)
