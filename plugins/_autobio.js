@@ -12,7 +12,7 @@ let _muptime
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `\n🟢 Time Active ${muptime}\n\n ┃ 💎  By GURU`
+		let bio = `\n🟢 وقت التشغيل ${muptime}\n\n ┃ 💎  تم صنع البوت بواسطة ᏰᎡᏫᏫᏦ ᏚᎯᎷᎯ ☠🗡`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 
@@ -24,5 +24,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, ' Day(s) ️', h, ' Hour(s) ', m, ' Minute(s)'].map(v => v.toString().padStart(2, 0)).join('')
+  return [d, ' ايام(s) ️', h, ' ساعات(s) ', m, ' دقائق(s)'].map(v => v.toString().padStart(2, 0)).join('')
 }
