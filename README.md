@@ -1,87 +1,121 @@
-
-<p align="center">  
-  <a href="https://youtu.be/WcA7GZuaN0A">
-    <img alt="Guru" height="300" src="https://cdn.jsdelivr.net/gh/Guru322/api@Guru/guru.jpg">
-    <h1 align="center">GURU-BOT</h1>
-  </a>
-</p>
+<h1 align="center"> 𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓 <br></h1>
 <p align="center">
-<a href="https://github.com/Guru322"><img title="Author" src="https://img.shields.io/badge/GURU-BOT-black?style=for-the-badge&logo=telegram"></a>
-<p/>
-<p align="center">
-<a href="https://github.com/Guru322?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Guru322?label=Followers&style=social"></a>
-<a href="https://github.com/Guru322/GURU-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Guru322/GURU-BOT?&style=social"></a>
-<a href="https://github.com/Guru322/GURU-BOT/network/members"><img title="Fork" src="https://img.shields.io/github/forks/Guru322/GURU-BOT?style=social"></a>
-<a href="https://github.com/Guru322/GURU-BOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Guru322/GURU-BOT?label=Watching&style=social"></a>
+<img src="https://telegra.ph/file/dc8a4455da94fcce47208.gif" />
 </p>
 
-####  
-GURU-BOT- Simple Multi Device whatsapp bot.
+<p align="center">
+Tamaki Bot Multi Device is a automated whatsapp bot developed by <a href="https://github.com/BrookSama" target="_blank">Xeon</a> using <a href="https://github.com/BrookSama" target="_blank">Baileys</a> and <a href="https://github.com/BrookSama" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+</p>
 
-***
+<p align="center">
+Big thanks❤️ to <a href="https://github.com/RaySenpai69" target="_blank">Ray Senpai</a> for huge contribution.
+</p>
 
-#### SETUP
+---
 
-1. Fork the repo
-    <br>
-<a href='https://github.com/Guru322/GURU-BOT/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<p align="center">
+<a href="https://youtu.be/eE1bUUnR87Y"><img title="Size" src="https://img.shields.io/badge/Tutorial-Video-green"></a>
+</p>
 
-2. Scan the QR and upload guru.data.json to your fork(will recieve it on your bot number after scanning)
-    <br>
-<a href='https://replit.com/@Guru322/GURU-BOT-QR-CODE-GENERATOR?v=1' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+------
 
+# ```Bot Info```
+<p align="center">
+<a href="https://github.com/DGXeon/followers"><img title="Followers" src="https://img.shields.io/github/followers/DGXeon?color=red&style=flat-square"></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/DGXeon/CheemsBot-MD6?color=blue&style=flat-square"></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6/network/members"><img title="Forks" src="https://img.shields.io/github/forks/DGXeon/CheemsBot-MD6?color=red&style=flat-square"></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/DGXeon/CheemsBot-MD6?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6"><img title="Open Source" src="https://img.shields.io/badge/Author-Xeon%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6/"><img title="Size" src="https://img.shields.io/github/repo-size/DGXeon/CheemsBot-MD6?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD6&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/DGXeon/CheemsBot-MD6/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+</p>
+<p align='center'>
+    </p>
 
+-------
 
-#### DEPLOY TO Heroku 
+## ```Connect With Me```
+<p align="center">
+<a href="http://wa.me/+970567751182"><img src="https://img.shields.io/badge/Join Official GC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</p>
 
-1. If You don't have an account in Heroku. Create a account.
-    <br>
-<p align="center"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+## ```Kingdom website ```
 
-2. Watch the following video to create Heroku acc for free.
-    <br>
-<p align="center"><a href="https://www.youtube.com/watch?v=J_Sq5OxK8ZE"> <img src="https://img.shields.io/badge/heroku%20Tutorial-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-3. Now Deploy
-    <br>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Guru322/GURU-BOT"> <img src="https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-#### DEPLOY TO Replit 
-
-1. If You don't have an account in Replit. Create a account.
-    <br>
-<p align="center"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
-
-2. Now Deploy
-    <br>
-<p align="center"><a href="https://repl.it/github/avi453/GURU-BOT"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
-
-#### DEPLOY TO COOLIFY (Error occurs when server gets overloaded)
-
-1. If You don't have an account in Coolify. Create a account.
-    <br>
-<p align="center"><a href="http://65.21.52.72:3000/register"> <img src="https://img.shields.io/badge/coolify%20Account-blue?style=for-the-badge&logo=coolify" width="220" height="38.45"/></a></p>
-
-2. Now Deploy
-    <br>
-<p align="center"><a href="https://youtu.be/hBxSyqyeoFU"> <img src="https://img.shields.io/badge/Coolify%20Deploy-blue?style=for-the-badge&logo=coolify" width="220" height="38.45"/></a></p>
+- [`Join us`](http://640b4f8829a90.site123.me/)
 
 
- ## 📙 Guide
+## ```『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』```
 
- - [Termux Hosting Guide](https://github.com/Guru322/GURU-BOT/blob/main/Termux-Guide.md)
- 
- 
- ## 🤩 Support
+- [`𝐍𝐄𝐖𝐒`](https://chat.whatsapp.com/GW1od1q3l8i4KLmpsZMHD6)
+- [`𝐑𝐄𝐂𝐄𝐏𝐓𝐈𝐎𝐍`](https://chat.whatsapp.com/IuDAdDRu9GtEStnEwsnmph)
+- [`𝐒𝐓𝐈𝐂𝐊𝐄𝐑`](https://chat.whatsapp.com/DV9ME7ocNPJA03qXmezoeI)
+- [`𝐒𝐓𝐈𝐂𝐊𝐄𝐑 𝟐`](https://chat.whatsapp.com/HPbkiTODW4Z8r1ZyE0vr2D)
+- [`𝐒𝐇𝐀𝐑𝐄`](https://chat.whatsapp.com/HvF7AJL2A3e35K5eiXwS6l) 
+- [`𝐄𝐃𝐈𝐓`](https://chat.whatsapp.com/CWMFflMoOyR9Y8a5zu4jPV)
+- [`𝐏𝐇𝐎𝐓𝐎`](https://chat.whatsapp.com/KmOXwzcstcg7Jcf12p4YNS)
 
-SUPPORT GROUP: <a href="https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp"><img alt="WhatsApp" src="https://camo.githubusercontent.com/2157131829ac512183ee8f8b6c6f803688a4cc66a2e686602844e80478401a7c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6f696e2047726f75702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465"/></a>
+# Setup For Deployment 👇
 
-- Star ⭐ the repo if you like GURU-BOT.
+- FORK THE REPOSITORY [Here]([https://github.com/DGXeon/CheemsBot-MD6/fork](https://github.com/BrookSama/Tamaki-Bot))
 
-## BASE OG BY [FG98](https://github.com/FG98F/dylux-fg)
+## `Scan QR Code For Session`
+[![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Cheems-Bot-Multi-Device-Qr-Code-Generator?output%20only=1&lite=1#index.js)
 
+ ` BUILDPACKS`
 
- **THANKS TO** |[GURU](https://github.com/Guru322/GURU-BOT) | 
+```
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+```
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FBrookSama%2FTamaki-Bot)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BrookSama/Tamaki-Bot)
 
+# Install Manually 👇
+## `Requirements`
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
+* [Libwebp](https://developers.google.com/speed/webp/download)
+* Any text editor
+## `Clone Repo & Installation dependencies`
+```bash
+git clone https://github.com/DGXeon/CheemsBot-MD6.git
+cd CheemsBot-MD6
+
+npm start
+```
+## `For Termux/Ssh/Ubuntu`
+```bash
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/DGXeon/CheemsBot-MD6
+cd CheemsBot-MD
+npm start
+```
+## `For VPS`
+```bash
+apt install nodejs 
+apt install git 
+apt apt install ffmpeg 
+apt apt install libwebp 
+apt apt install imagrmagick
+apt install bash
+git clone https://github.com/DGXeon/CheemsBot-MD6
+cd CheemsBot-MD6
+npm start
+```
+## `For 24/7 Activation (Termux)`
+```bash
+npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
