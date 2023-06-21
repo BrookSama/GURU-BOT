@@ -7,8 +7,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   let chat = global.db.data.chats[m.chat];
   if (!chat.nsfw) throw `🚫 This group does not support NSFW content.\n\nTo turn it on, use: *${usedPrefix}enable* nsfw`;
   let user = global.db.data.users[m.sender].age;
-  if (user < 18) throw `❎ You must be 18 years or older to use this feature.`;
-  if (!text) throw `✳️ What do you want to search?\n📌 Usage: *${usedPrefix + command} <search>*\n\nExample: Hot desi bhabi or you can use a link as well\nExample: .xnxx link *`;
+  if (user < 18) throw `❎ يجب أن يكون عمرك 18 عاما أو أكثر لاستخدام هذه الميزة.`;
+  if (!text) throw `✳️ ماذا تريد أن تبحث؟\n📌 Usage: *${usedPrefix + command} <search>*\n\nExample: Hot desi bhabi or you can use a link as well\nمثال: .xnxx link *`;
     
   m.react('⌛');
 
@@ -37,9 +37,9 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
             `
               ≡  *XNXX DL*
         
-              ▢ *📌Title*: ${json.result.title}
-              ▢ *⌚Duration*: ${json.result.duration}
-              ▢ *🎞️Quality*: ${json.result.quality}
+              ▢ *📌العنوان*: ${json.result.title}
+              ▢ *⌚المدة*: ${json.result.duration}
+              ▢ *🎞️الجودة*: ${json.result.quality}
             `.trim(),
             m,
             false,
