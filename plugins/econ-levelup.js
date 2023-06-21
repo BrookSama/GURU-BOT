@@ -7,11 +7,11 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         let txt = `
-┌───⊷ *LEVEL*
-▢ Number : *${name}*
-▢ Level : *${user.level}*
-▢ XP : *${user.exp - min}/${xp}*
-▢ Role : *${user.role}*
+┌───⊷ *مستوى*
+▢ الرقم : *${name}*
+▢ المستوى : *${user.level}*
+▢ الخبرة : *${user.exp - min}/${xp}*
+▢ الدورة : *${user.role}*
 └──────────────
 
 You lack *${max - user.exp}* of *XP* to level up
@@ -37,13 +37,13 @@ try {
     	user.role = global.rpg.role(user.level).name
 
         let str = `
-┌─⊷ *LEVEL UP*
-▢ Previous level : *${before}*
-▢ current level : *${user.level}*
-▢ Role : *${user.role}*
+┌─⊷ *ترقية المستوى*
+▢ المستوى السابق : *${before}*
+▢ المستوى الحالي : *${user.level}*
+▢ الدورة : *${user.role}*
 └──────────────
 
-*_The more you interact with the bots, the higher your level will be_*
+*_كلما تفاعلت أكثر مع البوت، كلما ارتفع مستواك_*
 `.trim()
         try {
             let img = API('fgmods', '/api/levelup', { 
