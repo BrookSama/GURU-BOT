@@ -5,9 +5,10 @@ export async function all(m) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('open this link')) && !m.isBaileys && !m.isGroup) {
      this.sendButton(m.chat, `*Invite bot to a group* 
         
-  Hallo @${m.sender.split('@')[0]} 
-  you can rent the bot to join a group or contact owner 
-  more info click on the button
+  مرحبا @${m.sender.split('@')[0]} 
+  يمكنك استئجار الروبوت للانضمام إلى مجموعة أو الاتصال بالمالك
+
+مزيد من المعلومات انقر على الزر
 `.trim(), igfg, null, [['Rent', '/buyprem']] , m, { mentions: [m.sender] })
     m.react('💎')
   } 
