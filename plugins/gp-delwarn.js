@@ -3,18 +3,18 @@ let handler = async (m, { conn, args, groupMetadata}) => {
         let who
         if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
         else who = m.chat
-        if (!who) throw `✳️ Tag or mention someone`
-        if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
+        if (!who) throw `✳️ منشن الشخص`
+        if (!(who in global.db.data.users)) throw `✳️ لم يتم العثور على المستخدم في قاعدة البيانات الخاصة بي`
        let warn = global.db.data.users[who].warn
        if (warn > 0) {
          global.db.data.users[who].warn -= 1
-         m.reply(`⚠️ *DELWARN*
+         m.reply(`⚠️ *حذف تحذير*
          
 ▢ Warns: *-1*
 ▢ Warns total: *${warn - 1}*`)
-         m.reply(`✳️ An admin lowered their warning, now you have *${warn - 1}*`, who)
+         m.reply(`✳️ حذف الادمن تحذير, الآن لديك *${warn - 1}*`, who)
          } else if (warn == 0) {
-            m.reply('✳️ The user has no warning')
+            m.reply('✳️ ليس لدى المستخدم أي تحذير')
         }
 
 }
