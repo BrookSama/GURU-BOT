@@ -4,15 +4,15 @@ import fetch from 'node-fetch'
 let handler = async function (m, { conn, text, usedPrefix }) {
   
 let m2 = `
-≡ _Use the commands with the prefix . 
+≡ _ضع قبل كل امر /
 
 ▢ ‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‎
 Ⓟ = Premium
 ⓓ = Diamonds
 -----  -----  -----  -----  -----
-  ≡ *ALL MENU LIST*
+  ≡ *قائمة الاوامر*
 
-┌─⊷ *ABOUT*
+┌─⊷ *معلومات*
 ▢ .blocklist
 ▢ .info
 ▢ .owner
@@ -25,7 +25,7 @@ let m2 = `
 ▢ .runtime
 └───────────
 
-┌─⊷ *GAMES*
+┌─⊷ *العاب*
 ▢ .dado
 ▢ .delttt
 ▢ .Math <mode>
@@ -34,7 +34,7 @@ let m2 = `
 ▢ .tictactoe <tag Someone>
 └───────────
 
-┌─⊷ *LEVELS AND ECO*
+┌─⊷ *المستويات*
 ▢ .adddi <@user>
 ▢ .addxp <@user>
 ▢ .balance
@@ -49,13 +49,13 @@ let m2 = `
 ▢ .work
 └───────────
 
-┌─⊷ *REGISTER*
+┌─⊷ *التسجيلات*
 ▢ .reg <name.age>
 ▢ .mysn
 ▢ .unreg <Num Serie>
 └───────────
 
-┌─⊷ *STICKER*
+┌─⊷ *الملصقات*
 ▢ .attp <text>
 ▢ .emojimix <emoji+emoji> (ⓓ)
 ▢ .getsticker (ⓓ)
@@ -68,7 +68,7 @@ let m2 = `
 ▢ .take <name>|<author>
 └───────────
 
-┌─⊷ *IMAGE*
+┌─⊷ *الصور*
 ▢ .tvid (ⓓ)
 ▢ .imagen (ⓓ)
 ▢ .girl (ⓓ)
@@ -77,7 +77,7 @@ let m2 = `
 ▢ .wallpaper (ⓓ)
 └───────────
 
-┌─⊷ *MAKER*
+┌─⊷ *صنع*
 ▢ .logololi (ⓓ)
 ▢ .neon (ⓓ)
 ▢ .devil (ⓓ)
@@ -85,14 +85,14 @@ let m2 = `
 ▢ .phlogo (ⓓ)
 └───────────
 
-┌─⊷ *PREMIUM*
+┌─⊷ *المميز*
 ▢ .gdrive (ⓓ) (Ⓟ)
 ▢ .mediafire <url> (ⓓ)
 ▢ .xvid (ⓓ) (Ⓟ)
 ▢ .xnxx (ⓓ) (Ⓟ)
 └───────────
 
-┌─⊷ *GROUP*
+┌─⊷ *القروبات*
 ▢ .add
 ▢ .delete
 ▢ .delwarn @user
@@ -118,26 +118,26 @@ let m2 = `
 ▢ .checkexpired
 └───────────
 
-┌─⊷ *EN/DISABLE OPTIONS*
+┌─⊷ *إضافات و خيارات*
 ▢ .enable <option>
 ▢ .disable <option>
 └───────────
 
-┌─⊷ *ANIME*
+┌─⊷ *أنمي*
 ▢ .waifu (ⓓ)
 ▢ .neko (ⓓ)
 ▢ .megumin (ⓓ)
 ▢ .loli (ⓓ)
 └───────────
 
-┌─⊷ *ANIME REACTIONS*
+┌─⊷ *رياكشن انمي*
 ▢ .kill @tag (ⓓ)
 ▢ .kiss @tag (ⓓ)
 ▢ .pat @tag (ⓓ)
 ▢ .slap @tag (ⓓ)
 └───────────
 
-┌─⊷ *DOWNLOADERS*
+┌─⊷ *التنزيلات*
 ▢ .facebook <url> (ⓓ)
 ▢ .gdrive (ⓓ) (Ⓟ)
 ▢ .gitclone <url> (ⓓ)
@@ -154,7 +154,7 @@ let m2 = `
 ▢ .ytmp4 <link yt> (ⓓ)
 └───────────
 
-┌─⊷ *TOOLS*
+┌─⊷ *أدوات*
 ▢ .cal <equation>
 ▢ .google (ⓓ)
 ▢ .lyrics
@@ -166,7 +166,7 @@ let m2 = `
 ▢ .wikipedia
 └───────────
 
-┌─⊷ *FUN*
+┌─⊷ *للتسلية*
 ▢ .afk <razon>
 ▢ .tomp3
 ▢ .toav
@@ -175,7 +175,7 @@ let m2 = `
 ▢ .bot
 └───────────
 
-┌─⊷ *DATABASE*
+┌─⊷ *قاعدة بيانات*
 ▢ .listcmd
 ▢ .setcmd <txt>
 └───────────
@@ -193,7 +193,7 @@ let m2 = `
 ▢ .gand (ⓓ)
 └───────────
 
-┌─⊷ *OWNER*
+┌─⊷ *المطور*
 ▢ .expired <days>
 ▢ .addprem <@tag>
 ▢ .banchat
@@ -213,7 +213,7 @@ let m2 = `
 ▢ .update
 └───────────
 
-┌─⊷ *ADVANCED*
+┌─⊷ *متقدم*
 ▢ >
 ▢ =>
 ▢ $
