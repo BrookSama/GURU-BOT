@@ -56,19 +56,18 @@ let infobt = `
 ▢ *${chats.length}* Total Chats
 
 *≡ OWNER*
-  *GURU*
-▢ Instagram :
-  • https://instagram.com/asli_guru69
+  *ᏰᎡᏫᏫᏦ ᏚᎯᎷᎯ ☠🗡*
+▢ gruop :
+  • https://chat.whatsapp.com/IuDAdDRu9GtEStnEwsnmph
 ▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
+  • https://github.com/BrookSama
+▢ kingdom : 
+  • https://instabio.cc/4072613SI2Tgx 
 
- *≡ S E R V E R*
-*🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 FreeRAM:* ${format(freemem())}
+
+ *≡ السيرفر*
+*🛑 الرام:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🔵 الرام المجاني:* ${format(freemem())}
 
 *≡  NodeJS memory *
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
