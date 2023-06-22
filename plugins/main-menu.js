@@ -60,7 +60,7 @@ let str = `
 *↓ رابط موثوق✔️* 
 * https://chat.whatsapp.com/IuDAdDRu9GtEStnEwsnmph *
 `
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
+    conn.sendFile(m.chat, pp, 'Guru.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
 }
