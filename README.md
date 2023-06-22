@@ -1,6 +1,6 @@
 <p align="center">  
   <a href="https://youtu.be/WcA7GZuaN0A">
-    <img alt="Guru" height="300" src="">
+    <img alt="Tamaki" height="300" src="">
     <h1 align="center">𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓</h1>
   </a>
 </p>
