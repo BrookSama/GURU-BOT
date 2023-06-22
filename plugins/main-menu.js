@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = 'Guru.jpg.gif'
+let pp = 'Guru.jpg'
 let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let { min, xp, max } = xpRange(user.level, global.multiplier)
@@ -60,13 +60,13 @@ let str = `
 *↓ رابط موثوق✔️* 
 * https://chat.whatsapp.com/IuDAdDRu9GtEStnEwsnmph *
 `
-    conn.sendFile(m.chat, pp, 'Guru.jpg.gif', str, m, false, { mentions: [who] })
+    conn.sendFile(m.chat, pp, 'Guru.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
 }
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['menu', 'help','h','command'] 
+handler.command = ['menu', 'help','/تاماكي','command'] 
 
 export default handler
 function clockString(ms) {
