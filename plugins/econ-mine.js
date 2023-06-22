@@ -19,18 +19,18 @@ please buy ❤️Healths first by typing * .buy potion <quantity>*,
 and type * .heal <quantity>* to use potions
 `.trim())
   //if (user.pickaxe == 0) return m.reply('for mining u need a picaxe 🗿')
-  if (new Date - user.lastclaim < cooldown) throw `You alrady mining!, wait for *${((user.lastclaim + cooldown) - new Date()).toTimeString()}*`
+  if (new Date - user.lastclaim < cooldown) throw `لقد خصل على الجائز بالفعل!, انتظر *${((user.lastclaim + cooldown) - new Date()).toTimeString()}*`
   let text = ''
   for (let reward of Object.keys(rewards)) {
     if (!(reward in user)) continue
     user[reward] += rewards[reward]
     text += `*+${rewards[reward]}* ${reward}\n`
   }
-  //conn.sendButton(m.chat,'*––––––『 MINE 』––––––*', text.trim(), null, [['Adventure', '.adventure'], ['Weekly', '.weekly']],m)
+  //conn.sendButton(m.chat,'*––––––『 الهدية 』––––––*', text.trim(), null, [['Adventure', '.adventure'], ['Weekly', '.weekly']],m)
   m.reply(`
-  🎁 *YOU WENT ON MINING *
+  🎁 *لقد اردت الحصول على هدية *
   
-  ▢ *AND GOT:*
+  ▢ *لقد حصلت على:*
    ${text}`)
   user.lastclaim = new Date * 1
 }
