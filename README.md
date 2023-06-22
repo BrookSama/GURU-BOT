@@ -1,6 +1,6 @@
 <p align="center">  
   <a href="https://youtu.be/WcA7GZuaN0A">
-    <img alt="Tamaki" height="300" src="">
+    <img alt="Tamaki" height="300" src="https://telegra.ph/file/434937472f89cdf06ec1d.jpg">
     <h1 align="center">𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓</h1>
   </a>
 </p>
@@ -15,7 +15,7 @@
 </p>
 
 ####  
-GURU-BOT- Simple Multi Device whatsapp bot.
+𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓- Simple Multi Device whatsapp bot.
 
 ***
 
