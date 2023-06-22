@@ -245,6 +245,7 @@ export async function handler(chatUpdate) {
                     foxexp: 0,
                     dog: 0,
                     dogexp: 0,
+		    antiver: true,
                     horselastfeed: 0,
                     catlastfeed: 0,
                     foxlastfeed: 0,
