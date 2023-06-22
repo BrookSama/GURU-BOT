@@ -37,12 +37,12 @@ _*مع تحيات إدارة :*_
 
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
     let pp = './Guru.jpg' 
-    m.reply(m.chat, m2, ,m)
+    conn.reply(m.chat, m2,null,m)
    
 }
 
 handler.help = ['audios']
 handler.tags = ['main']
-handler.command = ['ترحيب', 'استمارة', 'تر'] 
+handler.command = ['تر','ترحيب'] 
 
 export default handler
