@@ -1,7 +1,7 @@
 <p align="center">  
   <a href="https://youtu.be/WcA7GZuaN0A">
     <img alt="Guru" height="300" src="https://cdn.jsdelivr.net/gh/Guru322/api@Guru/guru.jpg">
-    <h1 align="center">GURU-BOT</h1>
+    <h1 align="center">𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓</h1>
   </a>
 </p>
 <p align="center">
