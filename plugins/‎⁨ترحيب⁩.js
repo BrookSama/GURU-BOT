@@ -43,6 +43,6 @@ _*مع تحيات إدارة :*_
 
 handler.help = ['audios']
 handler.tags = ['main']
-handler.command = ['تر','ترحيب'] 
+handler.command = ['1','استمارة'] 
 
 export default handler
