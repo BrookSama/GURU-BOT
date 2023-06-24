@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()} الإشارة إلى شخص ما @TAG او اكتب الاسم ` 
+if (!text) throw ` الإشارة إلى شخص ما @TAG او اكتب الاسم ` 
 
 if (command == 'جمال') {
 let juego = `معدل جمال السيد(ة): ${text.toUpperCase()} بنسبا 100/100\nهيا : ${(100).getRandom()}%`.trim()
