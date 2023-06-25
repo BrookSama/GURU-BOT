@@ -7,14 +7,14 @@ let handler = async (m, { conn, args, text }) => {
   
   if (!shortUrl1) throw `*Error: Could not generate a short URL.*`;
 
-  let done = `*SHORT URL CREATED!!*\n\n*Original Link:*\n${text}\n*Shortened URL:*\n${shortUrl1}`.trim();
+  let done = `*تم إنشاء رابط قصير!!*\n\n*الرابط الاصلي:*\n${text}\n*الرابط المختصر:*\n${shortUrl1}`.trim();
   
   m.reply(done);
 };
 
 handler.help = ['tinyurl', 'shorten'].map(v => v + ' <link>');
 handler.tags = ['tools'];
-handler.command = /^(tinyurl|short|acortar|corto)$/i;
+handler.command = /^(tinyurl|short|acortar|تقصير)$/i;
 handler.fail = null;
 
 export default handler;
