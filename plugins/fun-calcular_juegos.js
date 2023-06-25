@@ -32,6 +32,6 @@ await conn.reply(m.chat, juego, m, m.mentionedJid ? { mentions: m.mentionedJid }
 }
 handler.help = ['حب', 'جمال', 'lesbiana', 'غباء', 'pajera', 'puto', 'puta', 'ذكاء', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
 handler.tags = ['calculator']
-handler.command = /^حب|جمال|lesbiana|pajero|pajera|puto|puta|ذكاء|manca|rata|prostituta|prostituto/i
+handler.command = /^حب|جمال|lesbiana|غباء|pajera|puto|puta|ذكاء|manca|rata|prostituta|prostituto/i
 handler.exp = 100
 export default handler
