@@ -1,8 +1,8 @@
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 	
-   let tee = `✳️ Enter a short text\n\n📌 Example  : *${usedPrefix + command}* GURU`
-   let too = `✳️ Separate the text with a *+* \n\n📌 Example : \n*${usedPrefix + command}* GURU *+* BOT`
+   let tee = `✳️ اكتب شيء مع الامر\n\n📌 مثال  : *${usedPrefix + command}* Tamaki`
+   let too = `✳️ قم بفصل النص ب *+* \n\n📌 مثال : \n*${usedPrefix + command}* Tamaki *+* BOT`
     m.react(rwait)
 let type = (command).toLowerCase()
 switch (type) {
@@ -10,25 +10,25 @@ switch (type) {
 	case 'logololi':
 	if (!text) throw tee 
 	let img = global.API('fgmods', '/api/lolimaker', { text }, 'apikey')
-	conn.sendFile(m.chat, img, 'logo.png', `✅ Result`, m)
+	conn.sendFile(m.chat, img, 'logo.png', `✅ نتيجة`, m)
 	m.react(done)
 	break 
 	case 'neon': 
 	if (!text) throw tee
 	let ne = global.API('fgmods', '/api/textpro/neon', { text }, 'apikey')
-	conn.sendFile(m.chat, ne, 'logo.png', `✅ Result`, m)
+	conn.sendFile(m.chat, ne, 'logo.png', `✅ نتيجة`, m)
 	m.react(done)
 	break 
 	case 'devil': 
 	if (!text) throw tee
 	let de = global.API('fgmods', '/api/textpro/devil', { text }, 'apikey')
-	conn.sendFile(m.chat, de, 'logo.png', `✅ Result`, m)
+	conn.sendFile(m.chat, de, 'logo.png', `✅ نتيجة`, m)
 	m.react(done)
 	break 
 	case 'wolf': 
    if (!text) throw tee
    let wo = global.API('fgmods', '/api/textpro/logowolf2', { text: 'FG98', text2: text}, 'apikey')
-	conn.sendFile(m.chat, wo, 'logo.png', `✅ Result`, m)
+	conn.sendFile(m.chat, wo, 'logo.png', `✅ نتيجة`, m)
 	m.react(done)
 	break 
 	case 'phlogo': 
@@ -36,7 +36,7 @@ switch (type) {
 	if (!text.includes('+')) throw too  
 	let [a, b] = text.split`+`   
 	let ph = global.API('fgmods', '/api/textpro/pornhub', { text: a, text2: b}, 'apikey')
-	conn.sendFile(m.chat, ph, 'logo.png', `✅ Result`, m)
+	conn.sendFile(m.chat, ph, 'logo.png', `✅ نتيجة`, m)
 	m.react(done)
 	break 
 	default:
