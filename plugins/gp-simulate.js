@@ -2,7 +2,7 @@
 let handler = async (m, { conn, usedPrefix, command, args: [event], text }) => {
 
   let chat = global.db.data.chats[m.chat]
-  if (!chat.welcome) throw `✳️ To use this command you must activate the Welcomes with *${usedPrefix}on* welcome`
+  if (!chat.welcome) throw `✳️ لاستخدام هذا الأمر، يجب عليك تنشيط الترحيب مع *${usedPrefix}on* welcome`
   let te = `
   ┌─⊷ *EVENTS*
   ▢ welcome
@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command, args: [event], text }) => {
   ▢ demote
   └───────────
   
-  📌 Example :
+  📌 مثال :
   
   *${usedPrefix + command}* welcome @user`
 
