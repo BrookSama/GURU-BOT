@@ -25,6 +25,6 @@ wa.me/970567751182
 `.trim())
 handler.help = ['gpguru']
 handler.tags = ['main']
-handler.command = ['groups', 'groupguru', 'gugp', 'ggp', 'gpguru'] 
+handler.command = ['groups', 'groupguru', 'gugp', 'الفروع', 'gpguru'] 
 
 export default handler
