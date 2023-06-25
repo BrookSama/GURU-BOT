@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, usedPrefix, args, command, text }) => {
-  if (!text) throw `LINK?`;
+  if (!text) throw `ارسل الرابط مع الامر`;
   m.reply(wait);
 
   let res;
@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
 
   let api_response = await res.json();
   if (!api_response || !api_response.result || api_response.result.length === 0) {
-    throw `No video found or Invalid response from API.`;
+    throw `لم يتم العثور على فيديو أو استجابة غير صالحة من واجهة برمجة التطبيقات.`;
   }
 
   let cap = `HERE IS THE VIDEO >,<`;
@@ -23,6 +23,6 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
 
 handler.help = ['instagram']
 handler.tags = ['downloader']
-handler.command = /^(instagram|igdl|ig|instagramdl)$/i
+handler.command = /^(instagram|انستقرام|ig|instagramdl)$/i
 
 export default handler
