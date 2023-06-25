@@ -2,27 +2,27 @@
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
 var handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `Use example ${usedPrefix}${command} naruto blue bird`
+  if (!text) throw `استخدم المثال ${usedPrefix}${command} naruto blue bird`
   await m.reply(wait)
   let search = await yts(text)
   let vid = search.videos[Math.floor(Math.random() * search.videos.length)]
-  if (!search) throw 'Video Not Found, Try Another Title'
+  if (!search) throw 'لم يتم العثور على الفيديو، جرب عنوانا آخر'
   let { title, thumbnail, timestamp, views, ago, url } = vid
-  let wm = 'Downloading audio please wait'
+  let wm = 'تنزيل الصوت من فضلك انتظر'
 
-  let captvid = `╭──── 〔 Y O U T U B E 〕 ─⬣
-⬡ Title: ${title}
-⬡ Duration: ${timestamp}
-⬡ Views: ${views}
-⬡ Upload: ${ago}
-⬡ Link: ${url}
+  let captvid = `╭──── 〔 يوتيوب 〕 ─⬣
+⬡ العنوان: ${title}
+⬡ المدة: ${timestamp}
+⬡ الراي: ${views}
+⬡ التحميل: ${ago}
+⬡ الرابط: ${url}
 ╰────────⬣`
-  conn.sendButton(m.chat, `╭──── 〔 Y O U T U B E 〕 ─⬣
-⬡ Title: ${title}
-⬡ Duration: ${timestamp}
-⬡ Views: ${views}
-⬡ Upload: ${ago}
-⬡ Link: ${url}
+  conn.sendButton(m.chat, `╭──── 〔 يوتيوب 〕 ─⬣
+⬡ العنوان: ${title}
+⬡ المدة: ${timestamp}
+⬡ الراي: ${views}
+⬡ التحميل: ${ago}
+⬡ الرابط: ${url}
 ╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['VIDEO', `${usedPrefix}ytmp4 ${url}`], false, { quoted: m, 'document': { 'url':'https://wa.me/917605902011' },
 'mimetype': global.dpdf,
 'fileName': `𝔾𝕌ℝ𝕌 ℙ𝕃𝔸𝕐𝔼ℝ`,
@@ -64,7 +64,7 @@ thumbnail: await(await conn.getFile(thumbnail)).data
 }
 handler.help = ['play'].map(v => v + ' <query>')
 handler.tags = ['downloader']
-handler.command = /^play$/i
+handler.command = /^play|يوتيوب$/i
 
 handler.exp = 0
 handler.diamond = false
