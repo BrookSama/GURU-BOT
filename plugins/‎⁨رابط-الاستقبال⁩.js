@@ -22,17 +22,17 @@ let m2 =`*﷽*
 
 *تابع لمملكة*
 
-* 『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』* `
+* 『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』*  `
 
 
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
     let pp = './Guru1.jpg' 
-    conn.sendFile(m.chat,pp,m2,null,m)
+    conn.sendFile(m.chat,pp,null, m2,null,m)
    
 }
 
 handler.help = ['audios']
 handler.tags = ['main']
-handler.command = ['الاستقبال','استقبال'] 
+handler.command = ['استقبال','الاستقبال'] 
 
 export default handler
