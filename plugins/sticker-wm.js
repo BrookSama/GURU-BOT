@@ -8,9 +8,9 @@ let handler = async (m, { conn, text, args }) => {
        let g = typeof stick[1] !== "undefined" ? stick[1] : author;
   try {
     let mime = m.quoted.mimetype || ''
-    if (!/webp/.test(mime)) throw 'respond to a sticker'
+    if (!/webp/.test(mime)) throw 'الرد على ملصق'
     let img = await m.quoted.download()
-    if (!img) throw 'Responde to sticker!'
+    if (!img) throw 'رد على الملصق!'
     stiker = await addExif(img, f, g)
   } catch (e) {
     console.error(e)
@@ -22,6 +22,6 @@ let handler = async (m, { conn, text, args }) => {
 }
 handler.help = ['take <name>|<author>']
 handler.tags = ['sticker']
-handler.command = ['take', 'wm'] 
+handler.command = ['take', 'wm', 'ملصقي'] 
 
 export default handler
