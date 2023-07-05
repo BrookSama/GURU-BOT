@@ -10,8 +10,8 @@ let scircle = global.API('dzx', '/api/canvas/circle', { url })
 let stiker = await sticker(null, scircle, global.packname, global.author)
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })
 } catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] respond to a image to make it circle sticker*')
+m.reply('*[❗معلومة❗] الرد على صورة لجعلها ملصق دائرة*')
 }}
-handler.command = /^scircle|circle$/i
+handler.command = /^scircle|دائري|circle$/i
 export default handler
 /* `https://api.dhamzxploit.my.id/api/canvas/circle?url=${url}` */
