@@ -129,7 +129,7 @@ let m2 =`–––––––– ·「تاماكي أوامر」·
 
 
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Guru.jpg' 
+    let pp = './Tamaki.jpg' 
     conn.reply(m.chat, m2,null,m)
    
 }
