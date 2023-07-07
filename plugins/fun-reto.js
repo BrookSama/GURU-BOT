@@ -9,10 +9,7 @@ export default handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
-  
-  let pp = './Guru1.jpg' 
-    conn.sendFile(m.chat,pp,null, m2,null,m)
-}
+  }
 
 global.bucin = [
 "لو قررت تقفل جوالك يوم كامل مين تتوقع أنه يفتقدك ؟",
