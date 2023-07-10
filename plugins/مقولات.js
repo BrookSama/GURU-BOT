@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
 //conn.reply(m.chat,`*┌────「 مقولات 」─*\n*“${pickRandom(global.verdad)}”*\n*└────「 Mystic 」─*`, m)
-conn.reply(m.chat, `\n*“${pickRandom(global.verdad)}”*\n`, m,)}
+conn.reply(m.chat, `\n*“${pickRandom(global.verda)}”*\n`, m,)}
 
 handler.help = ['مقولات']
 handler.tags = ['مقولات']
@@ -12,7 +12,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.verdad = [
+global.verda = [
 `「مقولة رقم : 1」
 
 *––––––––– ·「☠️」· –––––––––––*,
