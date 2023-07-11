@@ -118,6 +118,6 @@ let m2 =`*_<اوامر تاماكي/>_*
 
 handler.help = ['audios']
 handler.tags = ['main']
-handler.command = ['المهام','اوامر','الاوامر''اوامر',] 
+handler.command = ['المهام','اوامر','الاوامر',] 
 
 export default handler
