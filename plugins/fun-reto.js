@@ -1,5 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
-conn.reply(m.chat, `╭━━━━━[ *سؤال* ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[Tamaki]━━━━━⬣`, m,)}
+let ak=./Guru4.jpg
+Conn.sendFile (m.chat,ak, `╭━━━━━[ *سؤال* ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[Tamaki]━━━━━⬣`, m,)}
 
 handler.help = ['تك']
 handler.tags = ['fun']
