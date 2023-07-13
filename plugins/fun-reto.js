@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
 let ak=`./Guru4.jpg`
-Conn.sendFile (m.chat,ak, `╭━━━━━[ *سؤال* ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[Tamaki]━━━━━⬣`, m,)}
+Conn.sendFile (m.chat,ak,null, `╭━━━━━[ *سؤال* ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[Tamaki]━━━━━⬣`, m,)}
 
 handler.help = ['تك']
 handler.tags = ['fun']
@@ -366,4 +366,4 @@ global.bucin = [
 "ما هو أكثر شيء يمكنه أن يخطف النوم من عينك؟",
   "هواية او تجربة كان ودك تستمر و تركتها ؟"
  
-] 
+]
