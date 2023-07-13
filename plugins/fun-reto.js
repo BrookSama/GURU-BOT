@@ -1,7 +1,7 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
-let ak='./Guru4.jpg'
-let g=`╭━━━━━[ *سؤال* ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[Tamaki]━━━━━⬣`
-Conn.sendFile (m.chat,ak,null,g,null,m)
+    let d=`*●┈┈┈┈ ⋞ 〈 سؤال 〉 ⋟ ┈┈┈┈┈●*\n*“${pickRandom(global.bucin)}”*\n╰━━━━━[ 𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓 ]━━━⬣`
+    let h='./Guru4.jpg'
+conn.sendFile(m.chat,h,null,d, m,)}
 
 handler.help = ['تك']
 handler.tags = ['fun']
@@ -11,7 +11,7 @@ export default handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
-  }
+}
 
 global.bucin = [
 "لو قررت تقفل جوالك يوم كامل مين تتوقع أنه يفتقدك ؟",
