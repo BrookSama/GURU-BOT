@@ -283,9 +283,28 @@ export async function handler(chatUpdate) {
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = ''
+                    chat.sWelcome = `
+「 نورتنا 」
+
+「 @user  」
+
+*–––– ·「☠️」· ––––––*
+
+*اقرأ الوصف*:
+@desc
+
+
+𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
+*–––– ·「☠️」· ––––––*`
                 if (!('sBye' in chat))
-                    chat.sBye = ''
+                    chat.sBye = `
+「 مع السلامة 👋 」
+
+「 @user  」
+
+𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
+
+*–––– ·「☠️」· ––––––*`
                 if (!('sPromote' in chat))
                     chat.sPromote = ''
                 if (!('sDemote' in chat))
@@ -318,13 +337,32 @@ export async function handler(chatUpdate) {
                     isBanned: false,
                     welcome: true,
                     detect: false,
-                    sWelcome: '',
-                    sBye: '',
+                    sWelcome: `
+「 نورتنا 」
+
+「 @user  」
+
+*–––– ·「☠️」· ––––––*
+
+*اقرأ الوصف*:
+@desc
+
+
+𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
+*–––– ·「☠️」· ––––––*`,
+                    sBye: `
+「 مع السلامة 👋 」
+
+「 @user  」
+
+𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
+
+*–––– ·「☠️」· ––––––*`,
                     sPromote: '',
                     sDemote: '',
                     delete: true,
                     antiLink: false,
-                    viewonce: false,
+                    viewonce: true,
                     antiToxic: true,
                     simi: false,
                     expired: 0,
