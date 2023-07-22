@@ -1,0 +1,17 @@
+let handler  = async (m, { conn }) => { 
+ let name = conn.getName(m.sender) 
+ let teks = ` 
+ ${pickRandom([`'*「 آية الكرسي 」*
+اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ
+ً'`])} 
+ `.trim() 
+ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }}) 
+ } 
+ handler.customPrefix = /أية الكرسي|اية الكرسي|آية الكرسي/i 
+ handler.command = new RegExp 
+  
+ export default handler 
+  
+ function pickRandom(list) { 
+     return list[Math.floor(Math.random() * list.length)] 
+ }
