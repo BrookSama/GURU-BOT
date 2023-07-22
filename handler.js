@@ -336,7 +336,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
                     welcome: true,
-                    detect: false,
+                    detect: true,
                     sWelcome: `
 「 نورتنا 」
 
@@ -581,11 +581,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.diamond && global.db.data.users[m.sender].diamond < plugin.diamond * 1) {
-                     this.reply(m.chat, `✳️ your diamonds ran out \n use the following command to buy more diamonds \n*${usedPrefix}todiamond* <amount`, m)
+                     this.reply(m.chat, `✳️ نفد ألماسك \n استخدم الأمر التالي لشراء المزيد من الماس \n*${usedPrefix}todiamond* <amount`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `✳️ required level ${plugin.level} to use this command. \nyour level ${_user.level}`, m)
+                    this.reply(m.chat, `✳️ المستوى المطلوب ${plugin.level} لاستخدام هذا الأمر. \nمستواك ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -796,11 +796,11 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return 
             await this.reply(msg.chat, `
-≡ deleted a message 
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-▢ *Number :* @${participant.split`@`[0]} 
+≡ تم حذف رسالتك 
+┌─⊷  الحذف التلقائي 
+▢ *الرقم :* @${participant.split`@`[0]} 
 └─────────────
-TO DEACTIVE , PRESS 
+لإيقاف الخاصية , ارسل 
 */off antidelete*
 *.enable delete*
 `.trim(), msg, {
