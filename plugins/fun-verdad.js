@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
     let d=`*––––––·「لو خيروك」·––––––*\n*“${pickRandom(global.bucin)}”*\n*––––––·「𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓」·––––––*`
-    let h='./Guru4.jpg'
+    let h='./Guru5.jpg'
 conn.sendFile(m.chat,h,null,d, m,)}
 
 handler.help = ['تك']
