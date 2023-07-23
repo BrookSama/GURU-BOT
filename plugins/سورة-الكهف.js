@@ -26,7 +26,7 @@ let handler  = async (m, { conn }) => {
 *- اللهم صلّ على سيدنا محمد* ‏'
 ً'`])} 
  `.trim() 
- Conn.sendFile(m.chat, a,null,teks, m)}
+ conn.sendFile(m.chat, a,null,teks, m)}
  handler.customPrefix = /سوره الكهف|سورة الكهف/i 
  handler.command = new RegExp 
   
