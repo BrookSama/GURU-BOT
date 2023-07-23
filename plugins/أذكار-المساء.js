@@ -101,7 +101,7 @@ __________🌺_________
 ً'`])} 
  `.trim() 
  conn.sendFile(m.chat, a,null,teks, m)}
- handler.customPrefix = /سوره الكهف|سورة الكهف/i 
+ handler.customPrefix = /اذكار المساء|أذكار المساء/i 
  handler.command = new RegExp 
   
  export default handler 
