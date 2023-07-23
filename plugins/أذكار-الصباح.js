@@ -1,5 +1,5 @@
 let handler  = async (m, { conn }) => { 
- let name = conn.getName(m.sender) 
+ let a='./Guru6.jpg'
  let teks = ` 
  ${pickRandom([`☀🌹 أذكارالصباح🌹☀
 
@@ -53,9 +53,8 @@ let handler  = async (m, { conn }) => {
 💐 الصلاه على النبي (عشر مرات)'
 ً'`])} 
  `.trim() 
- conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }}) 
- } 
- handler.customPrefix = /اذكار الصباح|أذكار الصباح/i 
+ conn.sendFile(m.chat, a,null,teks, m)}
+ handler.customPrefix = /سوره الكهف|سورة الكهف/i 
  handler.command = new RegExp 
   
  export default handler 
