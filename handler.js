@@ -314,7 +314,7 @@ export async function handler(chatUpdate) {
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = false
+                    chat.viewonce = true
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
 		if (!('antiver' in chat)) chat.viewonce = true
