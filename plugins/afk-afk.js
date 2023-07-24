@@ -6,7 +6,7 @@ let handler = async (m, { text, conn }) => {
     user.afkReason = text
     m.reply(`
   😴 *وضع الإختفاء* 
-You atre now afk until u send a message 
+أنت الآن في وضع الاختفاء حتى ترسل رسالة 
 ▢ *المستخدم:* ${conn.getName(m.sender)} 
 ▢ *السبب:* ${text ? text : ''}
   `)
