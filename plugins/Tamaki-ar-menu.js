@@ -121,7 +121,7 @@ let m2 =`*_<اوامر تاماكي/>_*
 
 
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Tamaki.jpg' 
+    let pp = './Tamaki/Tamaki.jpg' 
     conn.sendFile(m.chat,pp,null, m2,null,m)
    
 }
