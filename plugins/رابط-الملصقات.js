@@ -23,7 +23,7 @@ let m2 =`*﷽*
 
 
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Guru2.jpg' 
+    let pp = './Tamaki/Guru2.jpg' 
     conn.sendFile(m.chat,pp,null, m2,null,m)
    
 }
