@@ -222,7 +222,7 @@ let m2 = `
 Bot has more than 300 commands and i am lazy to write all
 `
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Guru.jpg' 
+    let pp = './Tamaki/Guru.jpg' 
     conn.sendFile(m.chat,pp,null,m2,m, rpyt)
    
 }
