@@ -1,5 +1,5 @@
 let handler  = async (m, { conn }) => { 
- let a='./src/Kahef.pdf'
+ let a='./Tamaki/Kahef.pdf'
  let teks = ` 
  ${pickRandom([`♡🕊️🫀♡
 
