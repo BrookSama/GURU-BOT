@@ -2,19 +2,19 @@
 let reg = 40
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     let fa = `
-How much you want to bet? 
+كم تريد أن تراهن؟ 
 
-📌 Example :
+📌 مثال :
 *${usedPrefix + command}* 100`.trim()
     if (!args[0]) throw fa
     if (isNaN(args[0])) throw fa
     let apuesta = parseInt(args[0])
     let users = global.db.data.users[m.sender]
     let time = users.lastslot + 10000
-    if (new Date - users.lastslot < 10000) throw `⏳ wait *${msToTime(time - new Date())}* to use again`
-    if (apuesta < 100) throw '✳️ Minimum of the bet is *100 XP*'
+    if (new Date - users.lastslot < 10000) throw `⏳ إنتظر *${msToTime(time - new Date())}* للاستخدام مرة أخرى`
+    if (apuesta < 100) throw '✳️ الحد الأدنى للرهين هو *100 XP*'
     if (users.exp < apuesta) {
-        throw `✳️ You do not have enough xp`
+        throw `✳️ ليس لديك ما يكفي xp`
     }
 
     let emojis = ["🕊️", "🦀", "🦎"];
@@ -41,31 +41,32 @@ How much you want to bet?
     }
     let end;
     if (a == b && b == c) {
-        end = `🎁 WON\n *+${apuesta + apuesta} XP*`
+        end = `🎁 فائر\n *+${apuesta + apuesta} XP*`
         users.exp += apuesta + apuesta
     } else if (a == b || a == c || b == c) {
-        end = `🔮 You almost made it keep trying :) \nTen *+${reg} XP*`
+        end = `🔮 كدت تجعلها تستمر في المحاولة :) \nالنتيجة *+${reg} XP*`
         users.exp += reg
     } else {
-        end = `😔 You lost  *-${apuesta} XP*`
+        end = `😔 لقد خسرت  *-${apuesta} XP*`
         users.exp -= apuesta
     }
     users.lastslot = new Date * 1
     return await m.reply(
         `
-       🎰 ┃ *SLOTS* 
+       🎰 ┃ *رهان كاذب* 
      ───────────
        ${x[0]} : ${y[0]} : ${z[0]}
        ${x[1]} : ${y[1]} : ${z[1]}
        ${x[2]} : ${y[2]} : ${z[2]}
      ───────────
         🎰┃🎰┃ 🎰
+        *الرهان شيء محرم في دين الاسلام لاكن هذه مجرد لعبة لا خسرة او ربح حقيقي*
         
 ${end}`) 
 }
 handler.help = ['slot <bet amount>']
 handler.tags = ['game']
-handler.command = ['slot']
+handler.command = ['slot','رهان']
 
 export default handler
 
