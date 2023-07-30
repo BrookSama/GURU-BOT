@@ -541,11 +541,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.diamond && global.db.data.users[m.sender].diamond < plugin.diamond * 1) {
-                    this.sendButton(m.chat, `✳️ your diamonds ran out \n use the following command to buy more diamonds \n*${usedPrefix}todiamond* <amount> \n*${usedPrefix}todiamondall*`, igfg, null, [['Buy', `${usedPrefix}todiamond`], ['Buy All', `${usedPrefix}todiamondall`]], m)
+                    this.sendButton(m.chat, `✳️ نفد ألماسك \n استخدم الأمر التالي لشراء المزيد من الماس \n*${usedPrefix}todiamond* <amount> \n*${usedPrefix}todiamondall*`, igfg, null, [['Buy', `${usedPrefix}todiamond`], ['Buy All', `${usedPrefix}todiamondall`]], m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `✳️ required level ${plugin.level} to use this command. \nyour level ${_user.level}`, m)
+                    this.reply(m.chat, `✳️ المستوى المطلوب ${plugin.level} to use this command. \nyour level ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -675,7 +675,7 @@ export async function handler(chatUpdate) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                    let pp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg'
                     let ppgp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
