@@ -658,11 +658,8 @@ export async function handler(chatUpdate) {
             await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
     }
 }
-/**
- * Handle groups participants update
- * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
- */
-export async function participantsUpdate({ id, participants, action }) {
+
+ export async function participantsUpdate({ id, participants, action }) {
     if (opts['self'])
         return
     // if (id in conn.chats) return // First login will spam
@@ -674,55 +671,56 @@ export async function participantsUpdate({ id, participants, action }) {
     let text = ''
     switch (action) {
         case 'add':
-            case 'remove':
-                if (chat.welcome) {
-                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata;
-                    for (let user of participants) {
-                        let pp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg';
-                        let ppgp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg';
-                        try {
-                            pp = await this.profilePictureUrl(user, 'image');
-                            ppgp = await this.profilePictureUrl(id, 'image');
-                        } catch (error) {
-                            console.error(`Error retrieving profile picture: ${error}`);
-                            pp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg'; // Assign default image URL
-                            ppgp = 'https://telegra.ph/file/cc4e6bfe66b62833316b5.jpg'; // Assign default image URL
+        case 'remove':
+            if (chat.welcome) {
+                let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+                for (let user of participants) {
+                    let pp = 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                    let ppgp = 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                    try {
+                        pp = await this.profilePictureUrl(user, 'image')
+                        ppgp = await this.profilePictureUrl(id, 'image')
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
-                                (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0]);
-                            
-                            let nthMember = groupMetadata.participants.length;
-                            let secondText = action === 'add' ? `Welcome, ${await this.getName(user)}, our ${nthMember}th member` : `Goodbye, our ${nthMember}th group member`;
-            
-                            let wel = await fetch(`https://oni-chan.my.id/api/canvas/welcome_v1?ppurl=${encodeURIComponent(pp)}&bgurl=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyd4vOi-tJEhN-voL-yVTYsko8dcBvloa2A&usqp=CAU&username=${encodeURIComponent(await this.getName(user))}&totalmember=${encodeURIComponent(nthMember.toString())}&secondtext=${encodeURIComponent(secondText)}&apikey=`);
-                            let lea = await fetch(`https://oni-chan.my.id/api/canvas/leave_v1?ppurl=${encodeURIComponent(pp)}&bgurl=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyd4vOi-tJEhN-voL-yVTYsko8dcBvloa2A&usqp=CAU&username=${encodeURIComponent(await this.getName(user))}&totalmember=${encodeURIComponent(nthMember.toString())}&secondtext=${encodeURIComponent(secondText)}&apikey=`);
-            
-                            let welBuffer = await wel.buffer();
-                            let leaBuffer = await lea.buffer();
-            
-                            this.sendFile(id, action === 'add' ? welBuffer : leaBuffer, 'swelcome.png', text, null, false, { mentions: [user] });
-                        }
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
+                            (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0])
+                         
+                            let wel = API('fgmods', '/api/welcome', {
+                                username: await this.getName(user),
+                                groupname: await this.getName(id),
+                                groupicon: ppgp,
+                                membercount: groupMetadata.participants.length,
+                                profile: pp,
+                                background: 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                            }, 'apikey')
+
+                            let lea = API('fgmods', '/api/goodbye', {
+                                username: await this.getName(user),
+                                groupname: await this.getName(id),
+                                groupicon: ppgp,
+                                membercount: groupMetadata.participants.length,
+                                profile: pp,
+                                background: 'https://telegra.ph/file/3694d5edde3846459647b.jpg'
+                            }, 'apikey')
+                            this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
+
                     }
                 }
-            
+            }
             break
         case 'promote':
         case 'promover':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user هو الآن مشرف')
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user is now administrador')
         case 'demote':
         case 'degradar':
             if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user لم يعد الآن مشرف')
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user not now an administrador')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect)
                 this.sendMessage(id, { text, mentions: this.parseMention(text) })
             break
     }
 }
-/**
- * Handler groups update
- * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
- */
+
 export async function groupsUpdate(groupsUpdate) {
     if (opts['self'])
         return
