@@ -215,7 +215,7 @@ export async function handler(chatUpdate) {
                     warn: 0,
                     level: 0,                    
                     role: 'Beginner',
-                    autolevelup: true,
+                    autolevelup: false,
                     money: 0,
                     bank: 0,
                     atm: 0,
@@ -245,7 +245,6 @@ export async function handler(chatUpdate) {
                     foxexp: 0,
                     dog: 0,
                     dogexp: 0,
-		    antiver: true,
                     horselastfeed: 0,
                     catlastfeed: 0,
                     foxlastfeed: 0,
@@ -283,22 +282,21 @@ export async function handler(chatUpdate) {
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = ``
+                    chat.sWelcome = ''
                 if (!('sBye' in chat))
-                    chat.sBye = ``
+                    chat.sBye = ''
                 if (!('sPromote' in chat))
                     chat.sPromote = ''
                 if (!('sDemote' in chat))
                     chat.sDemote = ''
                 if (!('delete' in chat))
-                    chat.delete = true
+                    chat.delete = false
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('viewonce' in chat))
                     chat.viewonce = true
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
-		if (!('antiver' in chat)) chat.viewonce = true
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('autosticker' in chat))
@@ -316,10 +314,10 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: false,
-                    detect: true,
-                    sWelcome: ``,
-                    sBye: ``,
+                    welcome: true,
+                    detect: false,
+                    sWelcome: '',
+                    sBye: '',
                     sPromote: '',
                     sDemote: '',
                     delete: true,
@@ -543,11 +541,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.diamond && global.db.data.users[m.sender].diamond < plugin.diamond * 1) {
-                     this.reply(m.chat, `✳️ نفد ألماسك \n استخدم الأمر التالي لشراء المزيد من الماس \n*${usedPrefix}todiamond* <amount`, m)
+                    this.sendButton(m.chat, `✳️ your diamonds ran out \n use the following command to buy more diamonds \n*${usedPrefix}todiamond* <amount> \n*${usedPrefix}todiamondall*`, igfg, null, [['Buy', `${usedPrefix}todiamond`], ['Buy All', `${usedPrefix}todiamondall`]], m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `✳️ المستوى المطلوب ${plugin.level} لاستخدام هذا الأمر. \nمستواك ${_user.level}`, m)
+                    this.reply(m.chat, `✳️ required level ${plugin.level} to use this command. \nyour level ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -589,7 +587,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                m.reply(`*🗂️ الملحق:* ${m.plugin}\n*👤 المرسل:* ${m.sender}\n*💬 الدردشة:* ${m.chat}\n*💻 الأمر:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *سجل الأخطاء:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
