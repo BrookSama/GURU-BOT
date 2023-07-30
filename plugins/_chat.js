@@ -103,7 +103,6 @@ handler.all = async function (m) {
             '🫡🤍  مساء النور ', 
               '🦉 نورت/ي', 
                 '😔 يزين من نور علينا', 
-                  '🦉❤️ مسائك انا'
    } 
   if (responses) {
     let randomIndex = Math.floor(Math.random() * responses.length);
