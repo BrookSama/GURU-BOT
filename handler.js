@@ -283,28 +283,9 @@ export async function handler(chatUpdate) {
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = `
-「 نورتنا 」
-
-「 @user  」
-
-*–––– ·「☠️」· ––––––*
-
-*اقرأ الوصف*:
-@desc
-
-
-𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
-*–––– ·「☠️」· ––––––*`
+                    chat.sWelcome = ``
                 if (!('sBye' in chat))
-                    chat.sBye = `
-「 مع السلامة 👋 」
-
-「 @user  」
-
-𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
-
-*–––– ·「☠️」· ––––––*`
+                    chat.sBye = ``
                 if (!('sPromote' in chat))
                     chat.sPromote = ''
                 if (!('sDemote' in chat))
@@ -335,29 +316,10 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
+                    welcome: false,
                     detect: true,
-                    sWelcome: `
-「 نورتنا 」
-
-「 @user  」
-
-*–––– ·「☠️」· ––––––*
-
-*اقرأ الوصف*:
-@desc
-
-
-𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
-*–––– ·「☠️」· ––––––*`,
-                    sBye: `
-「 مع السلامة 👋 」
-
-「 @user  」
-
-𝐓𝐀𝐌𝐀𝐊𝐈 𝐁𝐎𝐓
-
-*–––– ·「☠️」· ––––––*`,
+                    sWelcome: ``,
+                    sBye: ``,
                     sPromote: '',
                     sDemote: '',
                     delete: true,
