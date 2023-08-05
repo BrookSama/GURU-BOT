@@ -142,6 +142,6 @@ m.react(done)
 }
 handler.help = ['allmenu']
 handler.tags = ['main']
-handler.command = ['list', 'all menu'] 
+handler.command = ['list', 'all menu', 'القائمة'] 
 
 export default handler
