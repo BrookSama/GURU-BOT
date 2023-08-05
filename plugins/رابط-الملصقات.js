@@ -1,8 +1,7 @@
-import fetch from 'node-fetch'
-
-let handler = async function (m, { conn, text, usedPrefix }) {
-  
-let m2 =`*﷽*
+let handler  = async (m, { conn }) => { 
+ let a='./Tamaki/Guru2.jpg'
+ let teks = ` 
+ ${pickRandom([`*﷽*
 
 *––––––––– ·「🍡」· –––––––––––*
 
@@ -19,17 +18,15 @@ let m2 =`*﷽*
 
 *تابع لمملكة*
 
-* 『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』* `
-
-
-//const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Tamaki/Guru2.jpg' 
-    conn.sendFile(m.chat,pp,null, m2,null,m)
-   
-}
-
-handler.help = ['audios']
-handler.tags = ['main']
-handler.command = ['ستيكرات','الاستيكرات'] 
-
-export default handler
+* 『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』* 
+ً'`])} 
+ `.trim() 
+ conn.sendFile(m.chat, a,null,teks, m)}
+ handler.customPrefix = /فرع الملصقات|قروب الملصقات/i 
+ handler.command = new RegExp 
+  
+ export default handler 
+  
+ function pickRandom(list) { 
+     return list[Math.floor(Math.random() * list.length)] 
+ }
