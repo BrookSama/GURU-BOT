@@ -25,15 +25,15 @@ let handler  = async (m, { conn }) => {
 
  https://chat.whatsapp.com/LMiZh36TqPTDAEbDweXoYL 
 
+*┇‌໋☠️ . - ايديت انمي و غيرها🎥*
+*+400*
+ https://chat.whatsapp.com/CWMFflMoOyR9Y8a5zu4jPV 
+ 
 *┇‌໋☠️ . - نشر مغلق📇*
 *+450*
 
  https://chat.whatsapp.com/HvF7AJL2A3e35K5eiXwS6l 
 
-*┇‌໋☠️ . - ايديت انمي و غيرها🎥*
-*+400*
-
- https://chat.whatsapp.com/CWMFflMoOyR9Y8a5zu4jPV 
 
 *┇‌໋☠️ . - نشر مفتوح📇*
 *+600*
@@ -44,6 +44,11 @@ let handler  = async (m, { conn }) => {
 *+100*
 
  https://chat.whatsapp.com/HTFzk1rwgpc4ipEUA3QiQk 
+
+ *┇‌໋☠️ . - نشر مفتوح📇*
+*+100*
+
+ https://chat.whatsapp.com/KR0VzNAb8F0Hw8Icdw1SbL 
 
 *––––––––– ·「☠️」· –––––––––––*
 
