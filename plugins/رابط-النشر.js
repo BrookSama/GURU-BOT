@@ -29,7 +29,7 @@ let handler  = async (m, { conn }) => {
 
 *––––––––– ·「📇」· –––––––––––*
 
-* الفرع المفتوح :『 https://chat.whatsapp.com/KR0VzNAb8F0Hw8Icdw1SbL 』*
+* الفرع المفتوح :『 https://chat.whatsapp.com/KAeD3CIdiawI33l0iiyjmN 』*
 
 
 *تابع لمملكة*
