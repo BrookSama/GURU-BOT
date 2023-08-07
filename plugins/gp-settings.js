@@ -1,19 +1,19 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     let isClose = { // Switch Case Like :v
-        'open': 'not_announcement',
-        'close': 'announcement',
+        'فتح': 'not_announcement',
+        'غلق': 'announcement',
     }[(args[0] || '')]
     if (isClose === undefined)
         throw `
-*✳️ choose an option:*
-  *▢ ${usedPrefix + command} close*
-  *▢ ${usedPrefix + command} open*
+*✳️ اختر خيارا:*
+  *▢ ${usedPrefix + command} غلق*
+  *▢ ${usedPrefix + command} فتح*
 `.trim()
     await conn.groupSettingUpdate(m.chat, isClose)
 }
-handler.help = ['group *open/close*']
+handler.help = ['group *فتح/غلق*']
 handler.tags = ['group']
-handler.command = ['group', 'grupo'] 
+handler.command = ['group', 'grupo', 'قروب'] 
 handler.admin = true
 handler.botAdmin = true
 
