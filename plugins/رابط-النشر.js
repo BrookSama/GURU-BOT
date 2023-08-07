@@ -27,6 +27,11 @@ let handler  = async (m, { conn }) => {
 
 * الفرع المفتوح :『 https://chat.whatsapp.com/HTFzk1rwgpc4ipEUA3QiQk 』*
 
+*––––––––– ·「📇」· –––––––––––*
+
+* الفرع المفتوح :『 https://chat.whatsapp.com/KR0VzNAb8F0Hw8Icdw1SbL 』*
+
+
 *تابع لمملكة*
 
 * 『☯︎ 𝐎𝐓𝐀𝐊𝐔「☠️」𝐊𝐈𝐍𝐆𝐃𝐎𝐌 ♕︎』*
