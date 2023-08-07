@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['group *فتح/غلق*']
 handler.tags = ['group']
-handler.command = ['group', 'grupo', 'قروب'] 
+handler.command = ['group', 'grupo', 'القروب'] 
 handler.admin = true
 handler.botAdmin = true
 
