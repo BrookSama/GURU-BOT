@@ -48,7 +48,7 @@ https://chat.whatsapp.com/HTFzk1rwgpc4ipEUA3QiQk
 *┇‌໋☠️ . - نشر مغلق📇*
 *+50*
 
-https://chat.whatsapp.com/KR0VzNAb8F0Hw8Icdw1SbL
+https://chat.whatsapp.com/KAeD3CIdiawI33l0iiyjmN
 
 *––––––––– ·「☠️」· –––––––––––*
 
