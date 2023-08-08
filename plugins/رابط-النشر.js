@@ -21,7 +21,7 @@ let handler  = async (m, { conn }) => {
 
 *––––––––– ·「📇」· –––––––––––*
 
-* الفرع المفتوح :『 https://chat.whatsapp.com/HPbkiTODW4Z8r1ZyE0vr2D 』*
+* الفرع المفتوح :『 https://chat.whatsapp.com/HfjwYSK3gnYJ8CKN9FUTBu 』*
 
 *––––––––– ·「📇」· –––––––––––*
 
