@@ -38,7 +38,7 @@ https://chat.whatsapp.com/HvF7AJL2A3e35K5eiXwS6l
 *┇‌໋☠️ . - نشر مفتوح📇*
 *+600*
 
-https://chat.whatsapp.com/CaX4tcUUMo1ByEo9e82sw3
+https://chat.whatsapp.com/HfjwYSK3gnYJ8CKN9FUTBu
 
 *┇‌໋☠️ . - نشر مفتوح📇*
 *+200*
