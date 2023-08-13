@@ -1,3 +1,10 @@
+import express from "express";
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => res.send('im dark man\n my number whatsapp :+968 9411 6692'));
+
+app.listen(port, () => {console.log(`Server is running on port http://localhost:${port}`);});
 console.log('✅ STARTING...')
 
 import { join, dirname } from 'path'
